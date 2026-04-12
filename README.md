@@ -29,3 +29,4 @@
 - Base de données : MySQL
 - LLM : OpenAI GPT / Ollama (local)
 - Frontend : HTML/CSS/JS vanilla
+# transpobot
