@@ -32,8 +32,8 @@ DB_CONFIG = {
 }
 
 LLM_API_KEY  = os.getenv("OPENAI_API_KEY", "")
-LLM_MODEL    = os.getenv("LLM_MODEL", "gpt-4o-mini")
-LLM_BASE_URL = os.getenv("LLM_BASE_URL", "https://api.openai.com/v1")
+LLM_MODEL    = os.getenv("LLM_MODEL", "llama3-8b-8192")
+LLM_BASE_URL = os.getenv("LLM_BASE_URL", "https://api.groq.com/openai/v1")
 
 # ── Schéma de la base (pour le prompt système) ─────────────────
 DB_SCHEMA = """
