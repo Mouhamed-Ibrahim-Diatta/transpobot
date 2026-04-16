@@ -30,7 +30,7 @@ DB_CONFIG = {
     "user":     os.getenv("DB_USER", "root"),
     "password": os.getenv("DB_PASSWORD", "FNakRgPVTNdlLMXeTmNnpwagxIMDWYgu"),  # ← mettez le vrai mot de passe
     "database": os.getenv("DB_NAME", "transpobot"),
-},
+
 }
 
 LLM_API_KEY  = os.getenv("GROQ_API_KEY", "")
