@@ -11,6 +11,8 @@ import os
 import re
 import httpx
 from dotenv import load_dotenv
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 
 
 load_dotenv()
@@ -183,6 +185,9 @@ def get_trajets_recent():
 @app.get("/health")
 def health():
     return {"status": "ok", "app": "TranspoBot"}
+@app.get("/")
+def serve_index():
+    return FileResponse("index.html")
 
 if __name__ == "__main__":
     import uvicorn
