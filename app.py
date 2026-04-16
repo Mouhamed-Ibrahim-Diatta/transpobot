@@ -11,12 +11,7 @@ import os
 import re
 import httpx
 from dotenv import load_dotenv
-from fastapi.responses import HTMLResponse
 
-@app.get("/", response_class=HTMLResponse)
-async def serve_frontend():
-    with open("index.html", "r", encoding="utf-8") as f:
-        return f.read()
 
 load_dotenv()
 
